@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section id="password-section">
+      <div id="password-box">
+        <div id="password-container">
+          <h1>
+            Generate a <br />
+            <span class="green">random password</span>
+          </h1>
+          <p>Never use an insecure password again.</p>
+          <button id="generate-button" onclick="generatePasswords()">
+            Generate passwords
+          </button>
+          <hr />
+          <div id="password-buttons">
+            <div id="password-one-btn">
+              <p
+                id="password-one"
+                class="green"
+                onclick="copyPassword('password-one')"
+              ></p>
+            </div>
+            <div id="password-two-btn">
+              <p
+                id="password-two"
+                class="green"
+                onclick="copyPassword('password-two')"
+              ></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="toast" class="toast">Kopierat!</div>
+    <script src="index.js"></script>
+  </body>
+</html>
